@@ -25,6 +25,27 @@ jobs:
       env:
         - DASK_SPEC="dask"  # most recent available
         - SCIPY_WHEELS="https://7933911d6844c6c53a7d-47bd50c35cd79bd838daf386af554a83.ssl.cf2.rackcdn.com/"
+    - python: 2.7
+      arch: ppc64le
+      env:
+        - DASK_SPEC="dask=0.15"  # minimum supported version
+    - python: 3.5
+      arch: ppc64le
+      env:
+        - DASK_SPEC="dask=0.15"  # minimum supported version
+    - python: 3.6
+      arch: ppc64le
+      env:
+        - DASK_SPEC="dask"  # most recent available
+    - python: 3.7
+      arch: ppc64le
+      env:
+        - DASK_SPEC="dask"  # most recent available
+    - python: 3.8
+      arch: ppc64le
+      env:
+        - DASK_SPEC="dask"  # most recent available
+        - SCIPY_WHEELS="https://7933911d6844c6c53a7d-47bd50c35cd79bd838daf386af554a83.ssl.cf2.rackcdn.com/"
 
 branches:
     except:
